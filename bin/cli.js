@@ -70,7 +70,6 @@ program
     .description('Create a new module in a project')
     .action(async (project, module, options) => {
         try {
-            const spinner = ora('Creating module...').start();
             let gitInit = options.git ?? false;
 
             const config = { git: gitInit };
