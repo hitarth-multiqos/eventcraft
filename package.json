@@ -1,0 +1,39 @@
+{
+  "name": "event-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "eveGen": "./bin/cli.js"
+  },
+  "scripts": {
+    "dev": "node src/commands/project.js",
+    "start": "node /bin/cli.js"
+  },
+  "keywords": [
+    "cli",
+    "project-generator",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "body-parser": "^1.20.3",
+    "commander": "^13.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "helmet": "^7.2.0",
+    "i18n": "^0.15.1",
+    "inquirer": "^12.4.2",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0",
+    "simple-git": "^3.27.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
