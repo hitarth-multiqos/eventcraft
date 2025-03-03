@@ -159,7 +159,7 @@ module.exports.copyFolder = async (source, destination) => {
 
         // Copy the folder and its contents
         await fsExtra.copy(source, destination);
-        console.log(`Successfully copied from "${source}" to "${destination}".`);
+        // console.log(`Successfully copied from "${source}" to "${destination}".`);
     } catch (error) {
         console.error(`Failed to copy folder: ${error.message}`);
     }

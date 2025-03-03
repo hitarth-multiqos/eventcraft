@@ -51,7 +51,7 @@ module.exports.createProject = async (projectTitle, config) => {
             // Install npm packages if requested
             if (config.installPackages) {
                 execSync(`cd ${projectPath} && npm run deps && npm run swagger`)
-                fs.unlinkSync(`${projectPath}/`, 'dependencies.js');
+                fs.unlinkSync(`${projectPath}/dependencies.js`);
             }
 
             // setTimeout(() => {

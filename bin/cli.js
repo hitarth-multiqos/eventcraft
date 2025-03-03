@@ -49,7 +49,7 @@ program
 
             const config = { git: gitInit, openCode: openCode, installPackages: installPackages };
 
-            console.log('🔧 Creating project with options:', config);
+            console.log('🔧 Creating project');
 
             const result = await createProject(projectTitle, config);
 
